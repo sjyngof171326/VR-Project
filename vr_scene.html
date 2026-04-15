@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>A-frame testing world</title>
+
+  </head>
+    
+  <body>
+  <html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://gftruj.github.io/webzamples/aframe/controls/oculus-thumbstick-controls.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.5.x/dist/aframe-environment-component.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item 
+          id="swatter" 
+          src="https://cdn.jsdelivr.net/gh/sjyngof171326/vr-project@main/swatter_chess.glb">
+        </a-asset-item>
+      </a-assets>
+      
+      <a-assets>
+        <a-asset-item 
+          id="hand" 
+          src="https://cdn.jsdelivr.net/gh/sjyngof171326/vr-project@main/hand.glb">
+        </a-asset-item>
+      </a-assets>
+      
+      <a-assets>
+        <a-asset-item 
+          id="trap" 
+          src="https://cdn.jsdelivr.net/gh/sjyngof171326/vr-project@main/trap_chess.glb">
+        </a-asset-item>
+      </a-assets>
+      
+      <a-assets>
+        <a-asset-item 
+          id="mosquito" 
+          src="https://cdn.jsdelivr.net/gh/sjyngof171326/vr-project@main/mosquito_chess.glb">
+        </a-asset-item>
+      </a-assets>
+      
+      <a-assets>
+        <a-asset-item 
+          id="maze" 
+          src="https://cdn.jsdelivr.net/gh/sjyngof171326/vr-project@main/maze.glb">
+        </a-asset-item>
+      </a-assets>
+
+      <a-entity environment="preset: dream; dressingAmount: 500; playArea: 20;"></a-entity>
+
+      <a-entity 
+        gltf-model="#swatter" 
+        position="26 -15 0" 
+        scale="6 6 6"
+        rotation="0 90 0">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#swatter" 
+        position="-23 -15 25" 
+        scale="6 6 6"
+        rotation="0 90 0">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#hand" 
+        position="-9.5 0 -11" 
+        scale="1 1 1"
+        rotation="0 90 0">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#hand" 
+        position="13 0 -30" 
+        scale="1 1 1"
+        rotation="0 90 0">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#hand" 
+        position="33 0 30" 
+        scale="1 1 1"
+        rotation="0 0 0">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#trap" 
+        position="19 0 45" 
+        scale="3 3 3"
+        rotation="0 140 0">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="10 0 -50" 
+        scale="0.5 0.5 0.5"
+        rotation="0 45 0">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="30 0 -42" 
+        scale="0.5 0.5 0.5"
+        rotation="27 55 30">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="23 0 -20" 
+        scale="0.5 0.5 0.5"
+        rotation="77 180 180">
+      </a-entity>
+      
+       <a-entity 
+        gltf-model="#mosquito" 
+        position="-4 2 0" 
+        scale="0.5 0.5 0.5"
+        rotation="180 46 69">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="9 2 28" 
+        scale="0.5 0.5 0.5"
+        rotation="180 60 39">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="18 2 38" 
+        scale="0.5 0.5 0.5"
+        rotation="180 60 39">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="16 0 38" 
+        scale="0.5 0.5 0.5"
+        rotation="59 23 71">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="19 0 40" 
+        scale="0.5 0.5 0.5"
+        rotation="20 48 23">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="20 0 40" 
+        scale="0.5 0.5 0.5"
+        rotation="60 24 39">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="23 0 42" 
+        scale="0.5 0.5 0.5"
+        rotation="70 17 58">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="21 0 41" 
+        scale="0.5 0.5 0.5"
+        rotation="69 20 18">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="22 0 40.5" 
+        scale="0.5 0.5 0.5"
+        rotation="50 0 74">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="20 0 40" 
+        scale="0.5 0.5 0.5"
+        rotation="0 19 0">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#mosquito" 
+        position="21.5 0 40" 
+        scale="0.5 0.5 0.5"
+        rotation="29 0 0">
+      </a-entity>
+      
+       <a-entity 
+        gltf-model="#mosquito" 
+        position="5 0 -29" 
+        scale="0.5 0.5 0.5"
+        rotation="58 20 23">
+      </a-entity>
+      
+      <a-entity 
+        gltf-model="#maze" 
+        position="10 0 0" 
+        scale="2 0.5 2">
+      </a-entity>
+      
+      <a-entity id="rig" position="5 0 -60" rotation="0 180 0">
+            <a-camera>
+              <a-entity oculus-touch-controls="hand: left" ></a-entity>
+              <a-entity oculus-touch-controls="hand: right" oculus-thumbstick-controls></a-entity>
+           </a-camera>
+       </a-entity>
+
+    </a-scene>
+  </body>
+</html>
+    
+  </body>
+  
+</html>
